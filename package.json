@@ -1,0 +1,50 @@
+{
+  "name": "stackdesk",
+  "version": "1.2.7",
+  "description": "A client for StackEdit that runs on your PC..",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-packager . app --platform win32 --arch x64 --out dist/ --icon ./icn/",
+    "setup": "electron-installer-windows --src dist/app-win32-x64/ --dest dist/installers/",
+    "oldbuild": "node oldbuild.js",
+    "ezbuild": "electron-packager-interactive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VogaSoftware/kode.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial"
+  ],
+  "author": "Graham Dianaty (@gmdianaty)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VogaSoftware/kode/issues"
+  },
+  "homepage": "https://github.com/atom/electron-quick-start#readme",
+  "devDependencies": {
+<<<<<<< HEAD
+    "electron-installer-codesign": "^0.1.1",
+    "electron-installer-dmg": "^0.1.0",
+    "electron-installer-squirrel-windows": "^1.3.0",
+    "electron-installer-windows": "*",
+    "electron-packager": "*",
+    "electron-prebuilt": "*",
+    "electron-windows-installer": "^1.2.5",
+    "grunt": "^0.4.5",
+    "grunt-electron-windows-installer": "^0.1.1",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "electron-packager-interactive": "0.0.5"
+=======
+    "electron-packager": "^5.2.1",
+    "electron-prebuilt": "^0.36.0",
+    "gulp": "^3.9.1"
+>>>>>>> 015170dce810a26ced015b6487a4c70a1f1c2e8e
+  }
+}
